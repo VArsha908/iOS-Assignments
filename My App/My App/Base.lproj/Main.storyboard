@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5io-9O-prg"/>
+                        <viewControllerLayoutGuide type="bottom" id="30z-Qu-DQx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="750"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EF9-8P-yos">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                <color key="backgroundColor" red="0.59104877222746088" green="0.88594964378238339" blue="0.43154702858082095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="eWC-C0-sam"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Text Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ms-SI-hUl">
+                                <rect key="frame" x="20" y="128" width="374" height="55"/>
+                                <color key="backgroundColor" red="0.92768036487355199" green="0.94298494170984459" blue="0.92426127725404195" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="rQp-P5-4QG"/>
+                                </constraints>
+                                <string key="text" base64-UTF8="YES">
+CA
+</string>
+                                <color key="textColor" red="0.28612821785598958" green="0.47692681347150256" blue="0.19031103343699401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Entered Text Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AB4-1G-gMa">
+                                <rect key="frame" x="40" y="366" width="334" height="28.666666666666686"/>
+                                <color key="backgroundColor" red="0.92258311060968923" green="0.93780359455958551" blue="0.91918280958910592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3A-Bd-vLS">
+                                <rect key="frame" x="119" y="235" width="176" height="53"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Pvz-cm-BhT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="176" id="YJL-K1-tRz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="SHOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sub:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9G-5s-vzp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EF9-8P-yos" secondAttribute="trailing" id="1ub-PC-Qpv"/>
+                            <constraint firstItem="8Ms-SI-hUl" firstAttribute="top" secondItem="EF9-8P-yos" secondAttribute="bottom" constant="53" id="3zM-4x-lay"/>
+                            <constraint firstItem="EF9-8P-yos" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FG6-N7-IN6"/>
+                            <constraint firstItem="F3A-Bd-vLS" firstAttribute="centerX" secondItem="8Ms-SI-hUl" secondAttribute="centerX" id="aP2-ay-2wd"/>
+                            <constraint firstItem="EF9-8P-yos" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bzH-IB-X22"/>
+                            <constraint firstAttribute="trailing" secondItem="AB4-1G-gMa" secondAttribute="trailing" constant="40" id="c4l-aG-eqT"/>
+                            <constraint firstItem="F3A-Bd-vLS" firstAttribute="top" secondItem="8Ms-SI-hUl" secondAttribute="bottom" constant="52" id="ci7-c7-jXj"/>
+                            <constraint firstItem="8Ms-SI-hUl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="fC9-oL-Qwm"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ms-SI-hUl" secondAttribute="trailing" constant="20" id="g8J-a4-huO"/>
+                            <constraint firstItem="AB4-1G-gMa" firstAttribute="top" secondItem="F3A-Bd-vLS" secondAttribute="bottom" constant="78" id="hKh-7u-pax"/>
+                            <constraint firstItem="AB4-1G-gMa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="jIh-CM-2bx"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="750"/>
+                    <connections>
+                        <outlet property="heading" destination="EF9-8P-yos" id="xiw-b7-0Kd"/>
+                        <outlet property="laboutput" destination="AB4-1G-gMa" id="sWG-p1-OTe"/>
+                        <outlet property="textinput" destination="8Ms-SI-hUl" id="Lf1-1Z-KSp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="112.50000000000001"/>
+        </scene>
+    </scenes>
+</document>
